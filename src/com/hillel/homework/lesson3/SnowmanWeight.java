@@ -1,6 +1,6 @@
 package com.hillel.homework.lesson3;
 
-public class Math3_2 {
+public class SnowmanWeight {
     public static void main(String[] args) {
         double r1 = 1, r2 = 0.5, r3 = 0.2;
         double p = 0.7;

@@ -1,6 +1,6 @@
 package com.hillel.homework.lesson3;
 
-public class Math3_1double {
+public class MathDouble {
     public static void main(String[] args) {
         double a = 45, b = 75, c = 32;
         double m = Math.abs (a-b);

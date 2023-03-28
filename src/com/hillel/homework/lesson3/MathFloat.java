@@ -1,6 +1,6 @@
 package com.hillel.homework.lesson3;
 
-public class Math3_1float {
+public class MathFloat {
     public static void main(String[] args) {
         float a = 45;
         float b = 75;
