@@ -13,17 +13,17 @@ public class Methods {
         printMessage("test");
 
     }
-    public static void printMessage(){
+    public static void printMessage() {
 
         System.out.println("message");
     }
 
-    public static void printMessage(String message){
+    public static void printMessage(String message) {
         System.out.println(message);
     }
 
     public static int generateRandom() {
-        return (int)(Math.random() * 100);
+        return (int) (Math.random() * 100);
     }
 
     public static int generateRandom(int min, int max) {
