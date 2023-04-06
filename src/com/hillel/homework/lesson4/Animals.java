@@ -7,7 +7,7 @@ public class Animals {
         System.out.println("how much food is needed for cats in a month in grams: " + cat);
         int dog = calculateEat(24, 3, 50, 30);
         System.out.println("how much food is needed for dogs in a month in grams: " + dog);
-        System.out.println("How much money do you need per month to run a shelter in dollars: " + (( cat + dog) *2));
+        System.out.println("How much money do you need per month to run a shelter in dollars: " + ((cat + dog) * 2));
 
     }
 
