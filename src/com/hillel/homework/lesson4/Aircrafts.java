@@ -3,7 +3,6 @@ package com.hillel.homework.lesson4;
 public class Aircrafts {
     public static void main(String[] args) {
 
-
         printAirplaneInfo("Jet", " F -22 Raptor ");
         printAirplaneInfo("Airliner", "Aerobus 737", 120);
         printAirplaneInfo("Airliner", "Boeing 777", 180, 28);
