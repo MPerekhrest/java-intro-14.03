@@ -6,7 +6,6 @@ public class LuckyNumbers {
             if (i / 10 != 4 && i % 10 != 4 && i % 10 != 9) {
                 System.out.println("i = " + i);
             }
-
         }
     }
 }
