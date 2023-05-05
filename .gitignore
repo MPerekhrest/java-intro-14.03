@@ -1,2 +1,4 @@
 # Project exclude paths
 /out/
+/.idea/
+/java-intro-14-03.iml
