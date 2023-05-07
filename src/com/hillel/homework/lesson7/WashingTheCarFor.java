@@ -1,21 +1,26 @@
 package com.hillel.homework.lesson7;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class WashingTheCar {
+public class WashingTheCarFor {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("input the number of cars to be washed: ");
+        System.out.println(" input the number of cars to be washed: ");
         int numberCars = Integer.parseInt(reader.readLine());
+        if (numberCars <= 0) {
+            System.out.println(" incorrect number car ");
+            return;
+        }
 
-        while (numberCars > 0) {
+        for (; numberCars != 0; numberCars--) {
             printSoap(numberCars);
             printWash(numberCars);
             printDry(numberCars);
-            numberCars--;
-            System.out.println(" Car is clean");
+            System.out.println(numberCars + " car is clean");
         }
         System.out.println("These cars is clean");
     }
@@ -32,6 +37,6 @@ public class WashingTheCar {
         System.out.println("Car is drying : " + numberCars);
     }
 
-
 }
+
 
