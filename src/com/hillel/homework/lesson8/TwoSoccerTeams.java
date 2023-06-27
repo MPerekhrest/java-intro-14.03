@@ -7,16 +7,16 @@ public class TwoSoccerTeams {
         int min = 18;
         int max = 60;
         int size = 20;
-        int[] playersFirstTeam = createTeam(min,max,size);
+        int[] playersFirstTeam = createTeam(min, max, size);
         System.out.println(Arrays.toString(playersFirstTeam));
-        int[] playersSecondTeam = createTeam(min,max,size);
+        int[] playersSecondTeam = createTeam(min, max, size);
         System.out.println(Arrays.toString(playersSecondTeam));
 
         int averageAgeFirstTeam = calculateAverageAge(playersFirstTeam);
         int averageAgeSecondTeam = calculateAverageAge(playersSecondTeam);
         System.out.println("team 1 = " + averageAgeFirstTeam);
         System.out.println("team 2 = " + averageAgeSecondTeam);
-        int maxAge = Math.max(averageAgeFirstTeam,averageAgeSecondTeam);
+        int maxAge = Math.max(averageAgeFirstTeam, averageAgeSecondTeam);
         System.out.println("max age team = " + maxAge);
     }
 
@@ -28,7 +28,7 @@ public class TwoSoccerTeams {
         return sumYearTeam / playersTeam.length;
     }
 
-    public static int[] createTeam (int min, int max, int size){
+    public static int[] createTeam(int min, int max, int size) {
         int[] playersTeam = new int[size];
         for (int i = 0; i < playersTeam.length; i++) {
             double random = Math.random();
