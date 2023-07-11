@@ -28,19 +28,18 @@ public class Lottery {
             secondArray[i] = getNumber();
             System.out.println("user input numbers : " + Arrays.toString(secondArray));
         }
-        sortAndPrint(firstArray);
-        sortAndPrint(secondArray);
+
         int counter = 0;
         for (int i = 0; i < size; i++) {
-            if (firstArray[i] != secondArray[i]) {
-                System.out.println();
-            } else {
-                counter++;
+            if (firstArray[i] == secondArray[i]) {
+
                 System.out.println((i) + " elements matched");
+                counter++;
             }
         }
         System.out.println(" number of matches: " + counter);
     }
+
     public static int getNumber() throws IOException {
         int min = 0;
         int max = 9;
@@ -51,11 +50,5 @@ public class Lottery {
             number = Integer.parseInt(Reader.readLine());
         }
         return number;
-    }
-    public static void sortAndPrint(int[] m) {
-        Arrays.sort(m);
-        for (int i = 0; i < m.length; i++) {
-        }
-        System.out.println(Arrays.toString(m));
     }
 }
