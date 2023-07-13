@@ -13,7 +13,7 @@ public class Classwork {
         }
         int[] rightTriangle = new int[9];
         for (int i = 0; i < rightTriangle.length + 1; i++) {
-            for (int j=0; j < i; j ++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" # ");
 
             }
