@@ -7,7 +7,7 @@ import static com.hillel.classwork.lesson9.ArraySort.fill;
 public class CopyArray {
     public static void main(String[] args) {
 
-        int numbers[] = new int[10];
+        int[] numbers = new int[10];
 
         fill(numbers);
 
