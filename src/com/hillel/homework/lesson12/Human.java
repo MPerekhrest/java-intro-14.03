@@ -2,10 +2,11 @@ package com.hillel.homework.lesson12;
 
 class Human {
 
-    public String name;
-    public Human father;
-    public Human mother;
-    public Human(String name){
+    private final String name;
+    private Human father;
+    private Human mother;
+
+    public Human(String name) {
         this.name = name;
     }
 

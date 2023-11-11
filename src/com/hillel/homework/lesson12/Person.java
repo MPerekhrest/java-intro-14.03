@@ -16,8 +16,9 @@ class Person {
         this.lastName = getRandomSurname();
         this.age = getRandomNumber(18, 86);
         this.weight = getRandomNumber(50, 100);
-        this.height = getRandomNumber(165,200);
+        this.height = getRandomNumber(165, 200);
     }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -28,24 +29,28 @@ class Person {
                 ", height=" + height +
                 '}';
     }
-    public static int  getRandomNumber(int min, int max) {
+
+    public static int getRandomNumber(int min, int max) {
         Random random = new Random();
-        return random.nextInt(max -min +1) + min;
+        return random.nextInt(max - min + 1) + min;
     }
+
+    public static String[] NAMES =
+            {"klaudia", "John", "Lucia", "Stefania", "Lilia", "Irena", "Miki", "Adam", "Jakub", "Leon"};
 
     public static String getRandomName() {
-        final String[] names =
-                {"klaudia", "John", "Lucia", "Stefania", "Lilia", "Irena", "Miki", "Adam", "Jakub", "Leon"};
         Random random = new Random();
-        int index = random.nextInt(names.length);
-        return names[index];
+        int index = random.nextInt(NAMES.length);
+        return NAMES[index];
     }
 
+    public static String[] SURNAMES =
+            {"Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", " Davis", "Wilson", "Thomas "};
+
     public static String getRandomSurname() {
-        final String[] surnames =
-                {"Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", " Davis", "Wilson", "Thomas "};
+
         Random random = new Random();
-        int index = random.nextInt(surnames.length);
-        return surnames[index];
+        int index = random.nextInt(SURNAMES.length);
+        return SURNAMES[index];
     }
 }

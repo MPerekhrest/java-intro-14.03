@@ -1,7 +1,5 @@
 package com.hillel.homework.lesson12;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Random;
 
 class Menu {
@@ -19,10 +17,10 @@ class Menu {
         this.veganNonVegan = getRandomNameValue(veganNon);
     }
 
-    final String[] names = {"Pizza Margarita", "Pizza Pepperoni", "Pizza Vegetarian", "Burgers", "Omlette", "Beef Tripe", "TomatoesT soup"};
-    final String[] listOfIngredient = {"Tomato", "Bekon", "Beef", "Cheese"};
-    final String[] spicyNo = {"spicy", " non spicy"};
-    final String[] veganNon = {"vegan ", "non vegan"};
+    public static String[] names = {"Pizza Margarita", "Pizza Pepperoni", "Pizza Vegetarian", "Burgers", "Omlette", "Beef Tripe", "TomatoesT soup"};
+    public static String[] listOfIngredient = {"Tomato", "Bekon", "Beef", "Cheese"};
+    public static String[] spicyNo = {"spicy", " non spicy"};
+    public static String[] veganNon = {"vegan ", "non vegan"};
 
     @Override
     public String toString() {
