@@ -1,4 +1,6 @@
-package com.hillel.homework.lesson13;
+package com.hillel.homework.lesson13.realestate;
+
+import com.hillel.homework.lesson13.realestate.AbstractTax;
 
 public class Commercial extends AbstractTax {
     private final double mRevenue;

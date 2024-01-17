@@ -1,4 +1,4 @@
-package com.hillel.homework.lesson13;
+package com.hillel.homework.lesson13.realestate;
 
 public abstract class AbstractTax {
     protected final double s;

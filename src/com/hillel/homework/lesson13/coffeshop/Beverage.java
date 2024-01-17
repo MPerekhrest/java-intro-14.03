@@ -1,12 +1,7 @@
-package com.hillel.homework.lesson13.drinks;
+package com.hillel.homework.lesson13.coffeshop;
 
 public abstract class Beverage {
     protected double price;
-
-
-    public Beverage() {
-
-    }
 
     public String prepare() {
         return "Making " + this.getClass().getSimpleName();
