@@ -1,4 +1,4 @@
-package com.hillel.homework.lesson13;
+package com.hillel.homework.lesson13.realestate;
 
 import java.util.ArrayList;
 import java.util.List;
