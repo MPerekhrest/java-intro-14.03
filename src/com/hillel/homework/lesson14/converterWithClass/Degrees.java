@@ -5,15 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Degrees {
-
     static final BufferedReader READER = new BufferedReader(new InputStreamReader(System.in));
-
     public static void main(String[] args) throws IOException {
         double value = getInputValue();
-        System.out.println("please, select converter and input  kelvin or fahrenheit :");
+        System.out.println(value);
+        System.out.println("write kelvin or fahrenheit convert : ");
         String input = READER.readLine();
-        eConverter(input);
-        double result = createConverter(input).covert((value));
+        double result = eConverter(input).covert(value);
         System.out.println("result : " + result);
     }
 
@@ -29,38 +27,27 @@ public class Degrees {
         try {
             return createConverter(input);
         } catch (IllegalArgumentException exception) {
-            System.out.println(input + " is invalid input. Try again");
-            System.out.println("please input valid : ");
+            System.out.println(input + " is invalid input.");
+            System.out.println("writing please kelvin or fahrenheit : ");
             return eConverter(READER.readLine());
         }
     }
-
-    public static boolean isNumber(String str) {
-        try {
-            double v = Double.parseDouble(str);
-            return true;
-        } catch (NumberFormatException ignored) {
-        }
-        return false;
-    }
-
     public static double getInputValue() throws IOException {
         System.out.println("Please, input value in celsius : ");
 
-        String value = " ";
-        boolean valueReady = false;
-        while (!valueReady) {
+        String value;
+        Double doubleValue = null;
+        while (doubleValue == null) {
             value = READER.readLine();
-            if (isNumber(String.valueOf(value))) {
-                valueReady = true;
-            } else {
+            try {
+                doubleValue = Double.parseDouble(value);
+            } catch (NumberFormatException ignored) {
                 System.out.println("Input valid value only in the numbers:");
             }
         }
-        System.out.println("Input value: " + value);
-        return Double.parseDouble(value);
+        System.out.println("Input value: " + doubleValue);
+        return doubleValue;
     }
-
 
 }
 
